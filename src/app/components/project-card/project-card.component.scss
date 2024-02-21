@@ -1,0 +1,114 @@
+.project-card{
+    background-color: #454545;
+    width: 25rem;
+    height: 7rem;
+    display: flex;
+    // align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+    border: 1px solid #00000000;
+
+    &:hover{
+        border: 1px solid;
+        // background-color: #454545;
+        // border-radius: 0 10px 0 10px;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to left, #2ca1fa, #ff6131);
+    }
+
+    .p-top-div{
+        height: 3rem;
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: flex-start;
+
+        .picon{
+            width: auto;
+            height: 3rem;
+        }
+        .p-title{
+            font-size: 14px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            color: #eae9eb;
+        }
+    }
+
+    .icons-part{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .links {
+            display: flex;
+            // margin-top: 1rem;
+            gap: 1rem;
+            color: #eae9eb;
+    
+            .o-icons-div {
+                padding: 0.5rem 1rem;
+                border: 1px solid #eae9eb28;
+                // border-radius: 50px;
+                color: #eae9eb;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                cursor: pointer;
+                font-size: 14px;
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+    
+                &:hover {
+                    background-color: #332940a4;
+                }
+
+                .github{
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+        }
+    
+        .tech-stack {
+            display: flex;
+            height: 4rem;
+            width: 100%;
+            gap: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-start;
+        
+            .t-icon {
+                height: 2rem;
+                width: auto;
+                -webkit-transition: all 0.30s;
+                transition: all 0.30s;
+                cursor: pointer;
+        
+                &:hover {
+                    box-shadow: inset;
+                    filter: brightness(130%);
+                    -webkit-filter: brightness(130%);
+                    -moz-filter: brightness(130%);
+                    -o-filter: brightness(130%);
+                    -ms-filter: brightness(130%);
+                    -webkit-transition: all 0.30s;
+                    transition: all 0.30s;
+                    filter: drop-shadow(0 0 0.75rem #804514);
+                }
+            }
+        }
+    
+    }
+
+}
+
+a {
+    text-decoration: none;
+    color: #eae9eb !important;
+    display: flex;
+}

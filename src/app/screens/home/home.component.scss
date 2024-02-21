@@ -1,0 +1,358 @@
+.home-page {
+    position: relative;
+    background-color: #292929;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    padding: 5rem 0;
+
+    .top-div {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        .profile-icon {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        .name {
+            font-family: "Poppins", sans-serif;
+            margin-top: 1rem;
+            color: #eae9eb;
+        }
+
+        .work {
+            font-family: "Poppins", sans-serif;
+            color: #eae9eb;
+            font-weight: 200;
+        }
+
+        .education{
+            display: flex;
+            align-items: center;
+            font-family: "Poppins", sans-serif;
+            color: #eae9eb;
+            // font-weight: 200;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 5rem;
+
+            .capsule,
+            .capsule2 {
+                padding: 0.3rem 1.5rem 0.3rem 1rem;
+                border: 1px solid #eae9eb28;
+                border-radius: 50px;
+                background-color: #33294075;
+                color: #eae9eb;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                cursor: pointer;
+                font-size: 14px;
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+
+                &:hover {
+                    background-color: #332940a4;
+                }
+
+            }
+
+            .capsule2 {
+                padding: 0.3rem 1rem;
+
+                .github,
+                .linkedin {
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+        }
+    }
+
+    .mid-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 10rem;
+
+        .header-lbl {
+            font-family: "Poppins", sans-serif;
+            margin-top: 1rem;
+            color: #eae9eb;
+        }
+
+        .techstack-div {
+            min-height: 5rem;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            height: auto;
+
+            .t-icon {
+                height: 3rem;
+                width: auto;
+                -webkit-transition: all 0.30s;
+                transition: all 0.30s;
+                cursor: pointer;
+
+                &:hover {
+                    box-shadow: inset;
+                    filter: brightness(130%);
+                    -webkit-filter: brightness(130%);
+                    -moz-filter: brightness(130%);
+                    -o-filter: brightness(130%);
+                    -ms-filter: brightness(130%);
+                    -webkit-transition: all 0.30s;
+                    transition: all 0.30s;
+                    filter: drop-shadow(0 0 0.75rem rgb(120, 159, 241));
+                }
+            }
+        }
+    }
+
+    .next-mid-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+
+        .header-lbl {
+            font-family: "Poppins", sans-serif;
+            margin-top: 1rem;
+            color: #eae9eb;
+        }
+
+        .project-div {
+            height: auto;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            // border: 1px solid #eae9eb28;
+
+            .exp-card {
+                width: 50rem;
+                // min-height: 30rem;
+                // background-color: #454545;
+                border: 1px solid #454545;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding: 2rem;
+
+            }
+
+            .itc-card {
+                .company-info {
+                    display: flex;
+                    gap: 1rem;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+
+                .itc-logo {
+                    width: 10rem;
+                    height: auto;
+                }
+
+                .right-company-info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    align-items: flex-start;
+                    justify-content: center;
+                }
+
+                .left-part {
+                    display: flex;
+                    gap: 1rem;
+                }
+
+                .tech-stack {
+                    display: flex;
+                    gap: 1rem;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+
+                    .t-icon {
+                        height: 2rem;
+                        width: auto;
+                        -webkit-transition: all 0.30s;
+                        transition: all 0.30s;
+                        cursor: pointer;
+
+                        &:hover {
+                            box-shadow: inset;
+                            filter: brightness(130%);
+                            -webkit-filter: brightness(130%);
+                            -moz-filter: brightness(130%);
+                            -o-filter: brightness(130%);
+                            -ms-filter: brightness(130%);
+                            -webkit-transition: all 0.30s;
+                            transition: all 0.30s;
+                            filter: drop-shadow(0 0 0.75rem #804514);
+                        }
+                    }
+                }
+
+                &:hover {
+                    border: 1px solid;
+                    // border-radius: 0 10px 0 10px;
+                    border-image-slice: 1;
+                    border-image-source: linear-gradient(to right, #9dcd17, #693c84);
+                }
+
+
+                .work {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 1rem;
+                    margin-top: 2rem;
+
+                    .texts {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        color: #dfdfdf;
+
+                        .info {
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 151%;
+                            letter-spacing: 1px;
+
+                            .highlight {
+                                font-weight: 400;
+                                color: #c5f348;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .title {
+                // font-family: "Poppins", sans-serif;
+                font-weight: 300;
+                color: #ffffff;
+                font-size: 24px;
+            }
+
+            .date {
+                font-family: "Poppins", sans-serif;
+                font-weight: 300;
+                color: #eae9eb;
+                font-size: 16px;
+            }
+
+            .other-exp-card {
+                width: 62rem;
+                height: 18rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 2rem 1rem 2rem;
+                gap: 1rem;
+            }
+
+            .projects {
+                width: 69rem;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 2rem 1rem 2rem;
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+
+        }
+
+    }
+}
+
+
+a {
+    text-decoration: none;
+    display: flex;
+    color: #eae9eb !important;
+}
+
+.light {
+    font-weight: 200;
+}
+
+.highlight {
+    font-weight: 400;
+    color: #c5f348;
+}
+
+.techstack-div {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .t-icon {
+        height: 2rem;
+        width: auto;
+        -webkit-transition: all 0.30s;
+        transition: all 0.30s;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: inset;
+            filter: brightness(130%);
+            -webkit-filter: brightness(130%);
+            -moz-filter: brightness(130%);
+            -o-filter: brightness(130%);
+            -ms-filter: brightness(130%);
+            -webkit-transition: all 0.30s;
+            transition: all 0.30s;
+            filter: drop-shadow(0 0 0.75rem #804514);
+        }
+    }
+}
+
+.footer-div{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // span{
+    //     color: #636363;
+    // }
+
+    .foot-img{
+        width: 2rem;
+        height: auto;
+    }
+}

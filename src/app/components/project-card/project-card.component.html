@@ -1,0 +1,32 @@
+<div class="project-card">
+    <div class="p-top-div">
+        <img class="picon" src={{data.icon}} alt={{data.title}} />
+        <span class="p-title">{{data.title}}</span>
+    </div>
+
+    <div class="icons-part">
+        <div class="tech-stack">
+            <!-- <img class="t-icon" src="../.././../assets/images/html-240.png" alt="html" />
+            <img class="t-icon" src="../.././../assets/images/css-240.png" alt="css" /> -->
+            <img class="t-icon" src="../.././../assets/images/react-240.png" alt="react-240" />
+            <img class="t-icon" src="../.././../assets/images/js-240.png" alt="js" />
+            <img class="t-icon" src="../.././../assets/images/redux-250.png" alt="redux" />
+        </div>
+    
+        <div class="links">
+            <div class="o-icons-div">
+                <a href={{data.link}} target="_blank">
+                    <span class="material-symbols-outlined">
+                        public
+                    </span>
+                </a>
+            </div>
+            <div class="o-icons-div" *ngIf="data.git">
+                <a href={{data.git}} target="_blank">
+                    <img class="github" src="../../../assets/images/icons8-github-90.png" alt="github" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>

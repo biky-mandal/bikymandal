@@ -1,0 +1,165 @@
+<div class="home-page">
+    <div class="top-div">
+        <img class="profile-icon" src="../../../assets/images/profile.jpg" />
+        <span class="name">Biky Mandal</span>
+        <span class="work">Frontend Developer</span>
+        <span class="education">B.Tech'22 - <span class="highlight"> Computer Science & Engineering</span>, Jorhat
+            Engineering College
+            <a href="https://jecassam.ac.in/" target="_blank">
+                <span class="material-symbols-outlined">
+                    arrow_outward
+                </span>
+            </a>
+
+        </span>
+        <div class="contact-info">
+            <a href="https://maps.app.goo.gl/g5Qw3gxrdfGDWZYr6" target="_blank">
+                <span class="capsule add">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    Assam
+                </span>
+            </a>
+
+            <span class="capsule phone">
+                <span class="material-symbols-outlined">
+                    smartphone
+                </span>
+                +91 84728 02283
+            </span>
+            <span class="capsule email">
+                <span class="material-symbols-outlined">
+                    mail
+                </span>
+                m.biky50@gmail.com
+            </span>
+            <a href="https://github.com/biky-mandal" target="_blank">
+                <span class="capsule capsule2">
+                    <img class="github" src="../../../assets/images/icons8-github-90.png" alt="github" />
+                </span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/bikymandal/" target="_blank">
+                <span class="capsule capsule2">
+                    <img class="linkedin" src="../../../assets/images/icons8-linkedin-100.png" alt="linkedin" />
+                </span>
+            </a>
+
+            <a href="../../../assets/pdfs/BikyMandal_resume.pdf" target="_blank">
+                <span class="capsule capsule2">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                </span>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="mid-div">
+        <span class="header-lbl">Tech Stack</span>
+        <div class="techstack-div">
+            <img class="t-icon" src="../.././../assets/images/html-240.png" alt="html" />
+            <img class="t-icon" src="../.././../assets/images/css-240.png" alt="css" />
+            <img class="t-icon" src="../.././../assets/images/sass-240.png" alt="scss" />
+            <img class="t-icon" src="../.././../assets/images/js-240.png" alt="js" />
+            <img class="t-icon" src="../.././../assets/images/typescript-240.png" alt="ts" />
+            <img class="t-icon" src="../.././../assets/images/nodejs-240.png" alt="node" />
+            <img class="t-icon" src="../.././../assets/images/angular-240.png" alt="angular" />
+            <img class="t-icon" src="../.././../assets/images/Rx_Logo-512-512.png" alt="rx" />
+            <img class="t-icon" src="../.././../assets/images/react-240.png" alt="react-240" />
+            <img class="t-icon" src="../.././../assets/images/redux-250.png" alt="redux-250" />
+            <img class="t-icon" src="../.././../assets/images/git-240.png" alt="git" />
+            <img class="t-icon" src="../.././../assets/images/visual-studio-code-240.png" alt="vscode" />
+            <img class="t-icon" src="../.././../assets/images/bash-96.png" alt="bash" />
+            <img class="t-icon" src="../.././../assets/images/mongodb96.png" alt="mongodb96" />
+        </div>
+    </div>
+
+    <div class="next-mid-div">
+        <span class="header-lbl light">Currently <span class="highlight">Associate IT Consultant</span> In</span>
+        <div class="project-div">
+            <div class="exp-card itc-card">
+                <div class="company-info">
+                    <div class="left-part">
+                        <img class="itc-logo" src="../../../assets/images/ITC_Infotech.png" />
+                        <div class="right-company-info">
+                            <span class="title">ITC Infotech India ltd.</span>
+                            <span class="date">27 Sep, 2022 - Current</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">
+                        <img class="t-icon" src="../.././../assets/images/html-240.png" alt="html" />
+                        <img class="t-icon" src="../.././../assets/images/css-240.png" alt="css" />
+                        <img class="t-icon" src="../.././../assets/images/typescript-240.png" alt="ts" />
+                        <img class="t-icon" src="../.././../assets/images/angular-240.png" alt="angular" />
+                        <img class="t-icon" src="../.././../assets/images/Rx_Logo-512-512.png" alt="rx" />
+                        <img class="t-icon" src="../.././../assets/images/git-240.png" alt="git" />
+                        <img class="t-icon" src="../.././../assets/images/visual-studio-code-240.png" alt="vscode" />
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="texts">
+                        <span class="material-symbols-outlined">
+                            play_arrow
+                        </span>
+                        <span class="info">
+                            Developed modern UI using <span class="highlight">Angular</span> and <span
+                                class="highlight">RxJS</span> with the perfect use case and implemented <span
+                                class="highlight">singnalR socket connection</span> to deal with <span
+                                class="highlight">industry 4.0</span> related real-time data.
+                        </span>
+                    </div>
+                    <div class="texts">
+                        <span class="material-symbols-outlined">
+                            play_arrow
+                        </span>
+                        <span class="info">
+                            Developed theme-specific <span class="highlight">(DARK / LIGHT)</span> responsive UI from
+                            scratch as suggested by the designer team.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="next-mid-div">
+        <span class="header-lbl">Past Experiences (Internships)</span>
+        <div class="project-div">
+            <div class="other-exp-card">
+                <ng-container *ngFor="let data of otherExpCard">
+                    <app-other-exp-card [data]="data"></app-other-exp-card>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="next-mid-div">
+        <span class="header-lbl">Projects</span>
+        <div class="project-div">
+            <div class="projects">
+                <ng-container *ngFor="let data of projectCard">
+                    <app-project-card [data]="data"></app-project-card>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer>
+        <div class="footer-div">
+            <!-- <span>Developed using</span> -->
+            <img class="foot-img" src="../../../assets/images/angular-240.png" />
+        </div>
+    </footer>
+
+</div>
