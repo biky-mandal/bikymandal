@@ -15,8 +15,8 @@ export class AppComponent implements OnInit{
   ){}
 
   ngOnInit(): void {
-    if(!sessionStorage.getItem('visit')){
-      this.router.navigate(['/welcome'])
-    }
+    // if(!sessionStorage.getItem('visit')){
+    //   this.router.navigate(['/welcome'])
+    // }
   }
 }
