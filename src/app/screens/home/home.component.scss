@@ -1,3 +1,10 @@
+@media only screen and (max-width: 600px) {
+    .oecard {
+        width: 100%;
+    }
+}
+
+
 .home-page {
     position: relative;
     background-color: #292929;
@@ -32,12 +39,39 @@
             font-weight: 200;
         }
 
-        .education{
+        .education {
             display: flex;
             align-items: center;
             font-family: "Poppins", sans-serif;
             color: #eae9eb;
+            font-size: 12px;
             // font-weight: 200;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .contact-info {
+                flex-wrap: wrap;
+                min-height: 5rem;
+                margin: 2rem 0;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            .contact-info {
+                flex-wrap: wrap;
+                min-height: 5rem;
+                margin: 2rem 0;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .contact-info {
+                flex-wrap: wrap;
+                min-height: 5rem;
+                margin: 2rem 0;
+            }
         }
 
         .contact-info {
@@ -95,6 +129,26 @@
             color: #eae9eb;
         }
 
+        @media only screen and (max-width: 600px) {
+            .techstack-div {
+                min-height: 8rem;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            .techstack-div {
+                min-height: 5rem;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .techstack-div {
+                min-height: 5rem;
+            }
+        }
+
         .techstack-div {
             min-height: 5rem;
             width: 90%;
@@ -124,6 +178,50 @@
                     filter: drop-shadow(0 0 0.75rem rgb(120, 159, 241));
                 }
             }
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .mid-div {
+            height: auto;
+        }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        .mid-div {
+            height: auto;
+        }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        .mid-div {
+            height: auto;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .next-mid-div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        .techstack-div {
+            min-height: 5rem;
+        }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        .techstack-div {
+            min-height: 5rem;
         }
     }
 
@@ -163,6 +261,28 @@
             }
 
             .itc-card {
+
+                /* Extra small devices (phones, 600px and down) */
+                @media only screen and (max-width: 600px) {
+                    .company-info {
+                        flex-wrap: wrap;
+                    }
+                }
+
+                /* Small devices (portrait tablets and large phones, 600px and up) */
+                @media only screen and (min-width: 600px) {
+                    .company-info {
+                        flex-wrap: wrap;
+                    }
+                }
+
+                /* Medium devices (landscape tablets, 768px and up) */
+                @media only screen and (min-width: 768px) {
+                    .company-info {
+                        flex-wrap: wrap;
+                    }
+                }
+
                 .company-info {
                     display: flex;
                     gap: 1rem;
@@ -278,6 +398,33 @@
                 gap: 1rem;
             }
 
+            @media only screen and (max-width: 600px) {
+                .other-exp-card {
+                    width: 100%;
+                    height: auto;
+                    flex-direction: column;
+                    gap: 2rem;
+                }
+            }
+        
+            /* Small devices (portrait tablets and large phones, 600px and up) */
+            @media only screen and (min-width: 600px) and (max-width: 991px) {
+                .other-exp-card {
+                    width: 100%;
+                    height: auto;
+                    flex-direction: column;
+                    gap: 2rem;
+                }
+            }
+        
+            /* Medium devices (landscape tablets, 768px and up) */
+            @media only screen and (min-width: 992px) {
+                .other-exp-card {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
             .projects {
                 width: 69rem;
                 height: auto;
@@ -338,7 +485,7 @@ a {
     }
 }
 
-.footer-div{
+.footer-div {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -351,7 +498,7 @@ a {
     //     color: #636363;
     // }
 
-    .foot-img{
+    .foot-img {
         width: 2rem;
         height: auto;
     }
